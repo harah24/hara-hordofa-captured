@@ -8,6 +8,7 @@ body{
     font-family: $body-font;
     font-size: 1.25rem;
     color: $primary;
+    background-color:$secondary;
 }
 
 h1,
@@ -56,7 +57,7 @@ nav {
 }
 
 .email {
-    font-size: 1.25;
+    font: size 1.625rem;
     line-height: 32px;
 }
 
@@ -64,3 +65,6 @@ p {
     line-height: 1.5rem;
 }
 
+ul {
+    text-decoration: none;
+}

@@ -227,6 +227,23 @@ html {
 }
 
 /* site colours */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 html {
   font-size: 125%;
 }
@@ -235,6 +252,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   color: #2C2C2C;
+  background-color: #EFFDF3;
 }
 
 h1,
@@ -283,7 +301,7 @@ nav {
 }
 
 .email {
-  font-size: 1.25;
+  font: size 1.625rem;
   line-height: 32px;
 }
 
@@ -291,13 +309,6 @@ p {
   line-height: 1.5rem;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
+ul {
+  text-decoration: none;
 }
