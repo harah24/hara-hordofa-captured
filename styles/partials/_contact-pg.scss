@@ -3,6 +3,13 @@
 
 // contact page background image 
 
+.header-flex{
+    background-image: url(.././../captured-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .socials{
     display: flex;
 }

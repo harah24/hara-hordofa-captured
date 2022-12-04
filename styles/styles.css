@@ -238,12 +238,6 @@ img {
   margin: 0 auto;
 }
 
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 html {
   font-size: 125%;
 }
@@ -311,4 +305,17 @@ p {
 
 ul {
   text-decoration: none;
+}
+
+.header-flex {
+  background-image: url(.././../captured-final-assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
