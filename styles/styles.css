@@ -307,6 +307,13 @@ ul {
   text-decoration: none;
 }
 
+.header-img {
+  background-image: url(../../captured-final-assets/header-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .header-flex {
   background-image: url(.././../captured-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
