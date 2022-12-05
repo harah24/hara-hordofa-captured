@@ -1,1 +1,20 @@
 @use "variables" as *;
+
+
+.blog-header{
+    background-image: url(../../captured-final-assets/blog-header.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.comment-1,
+.comment-2{
+    display: flex;
+}
+
+.jeremy,
+.julia{
+    // align-self:flex-start;
+    margin-top: 33px;
+}
