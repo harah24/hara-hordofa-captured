@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'typography';
+
+footer{
+    background-color: $primary;
+    color: $tertiary;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

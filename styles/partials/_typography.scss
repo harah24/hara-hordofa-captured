@@ -1,12 +1,9 @@
-@use "variables" as *;
 
-html {
-    font-size: 125%;
-}
+@use "variables" as *;
 
 body{
     font-family: $body-font;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: $primary;
     background-color:$secondary;
 }
@@ -26,21 +23,21 @@ nav,
 }
 
 h1 {
-    font-size: 8.625rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 92px;
 }
 
 h3 {
-    font-size: 2.625rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
 }
 
@@ -51,7 +48,7 @@ button {
 }
 
 nav {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 29px;
     letter-spacing: 1px;
 }
@@ -65,6 +62,6 @@ p {
     line-height: 1.5rem;
 }
 
-ul {
-    text-decoration: none;
+li{
+    list-style: none;
 }

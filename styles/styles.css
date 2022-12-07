@@ -227,6 +227,16 @@ html {
 }
 
 /* site colours */
+html {
+  font-size: 125%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -238,13 +248,9 @@ img {
   margin: 0 auto;
 }
 
-html {
-  font-size: 125%;
-}
-
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #2C2C2C;
   background-color: #EFFDF3;
 }
@@ -264,21 +270,21 @@ nav,
 }
 
 h1 {
-  font-size: 8.625rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 92px;
 }
 
 h3 {
-  font-size: 2.625rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
@@ -289,7 +295,7 @@ button {
 }
 
 nav {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 29px;
   letter-spacing: 1px;
 }
@@ -303,8 +309,8 @@ p {
   line-height: 1.5rem;
 }
 
-ul {
-  text-decoration: none;
+li {
+  list-style: none;
 }
 
 .header-img {
@@ -333,15 +339,143 @@ ul {
   margin-top: 33px;
 }
 
-.header-flex {
+.contact-header {
   background-image: url(.././../captured-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-}
-
-.socials {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 100px;
+}
+
+nav a {
+  margin: 0 30px 0 0;
+}
+
+.contact-title {
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 150px;
+}
+
+.bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  margin-left: 100px;
+}
+
+.connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.socials li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul i {
+  margin: 0 10px;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-info h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 45px;
+}
+
+.form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px;
+  margin-top: -150px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.name {
+  margin-right: 20px;
+}
+
+.name,
+.email-address {
+  border: 0px solid #4CEEA7;
+  border-width: 1px;
+  background-color: #FAFAFA;
+}
+
+textarea {
+  border-color: #4CEEA7;
+  border-width: 1px;
+}
+
+.contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  background-color: #2C2C2C;
+  color: #FAFAFA;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }

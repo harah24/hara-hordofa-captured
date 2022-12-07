@@ -1,15 +1,104 @@
 @use "variables" as *;
+@use "typography";
 
-
-// contact page background image 
-
-.header-flex{
+// header 
+.contact-header {
     background-image: url(.././../captured-final-assets/contact-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.socials{
+nav ul{
     display: flex;
+    justify-content:flex-end;
+    margin-right: 100px;
 }
+
+nav a {
+    margin: 0 30px 0 0;
+}
+
+.contact-title{
+    text-align:center;
+    margin-left: 350px;
+    margin-top: 150px;
+
+}
+
+//
+
+.bottom-section {
+    display: flex;
+    height: 50vh;
+    margin-left: 100px;
+}
+
+// socials and contact info 
+
+.connect{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials li{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+ul i {
+    margin: 0 10px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h4 {
+    display: flex;
+    margin-left: 45px;
+}
+
+// form
+
+.form-box {
+    display: flex;
+    margin-left: 150px;
+    margin-top: -150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.name {
+    margin-right: 20px;
+}
+
+.name,
+.email-address {
+    border: 0px solid $quaternary;
+    border-width: 1px;
+    background-color: $tertiary;
+}
+
+textarea {
+    border-color: $quaternary;
+    border-width: 1px;
+}
+
+.contact-btn {
+    display: flex;  
+}
+

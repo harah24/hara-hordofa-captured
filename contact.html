@@ -13,22 +13,43 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header>
-    <div class="header-flex">
-        <nav><!-- class=nav-bar -->
-            <ul> <!-- class=main-menu -->
-                <a href="index.html">Home</a>
-                <a href="#">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </ul>
-        </nav>
-        <div>
-            <h2>Get in Touch</h2>
+    <header>
+        <div class="contact-header">
+            <nav>
+                <ul class="main-menu"> 
+                    <a href="index.html"> Home</a> 
+                    <a href="#"> About </a> 
+                    <a href="blog.html"> Blog </a> 
+                    <a href="contact.html"> Contact </a>
+                </ul>
+            </nav>
+            <div class="contact-title">
+                  <h1>Get in Touch</h1>
+            </div>
         </div>
-    </div> <!-- .header-flex end -->
   </header>  
-  <section>
+  <section class="bottom-section">
+    <div class="connect">
+            <div class="socials">
+                <ul>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4> Info@email.com</h4>
+                <ul>
+                    <li>123-456-7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </div>
+    </div>
+    
+    <div class="form-box">
         <form action="">
             <div class="form-container">
                 <div class="form-section">
@@ -37,34 +58,17 @@
                 <div class="form-section">
                     <input type="text" id="email" name="email" class="email-address" placeholder="Email address">
                 </div>    
-             </div><!-- form-container end -->
+            </div> <!-- form-container end -->
                 <div class="message">
                     <textarea name="message" id="message" placeholder="Message" cols="70" rows="10"></textarea>
-                    <button>Submit</button>
+                    <button class="contact-btn">Submit</button>
                 </div>
         </form>
-        <div>
-            <div class="socials">
-                <ul>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-solid fa-phone"></i></li>
-                </ul>
-            </div>
-            <div>
-                <h3> Info@email.com</h3>
-                <ul>
-                <li>123-456-7890</li>
-                <li>123 Queen Street West, Unit 10</li>
-                <li>Toronto, Ontario</li>
-                <li>m5v2d5</li>
-                </ul>
-            </div>
-        </div>
+    </div>
+
   </section>
   <footer>
-    <p> Copyright 2018 HackerYou</p>
+    <p> Copyright © 2018 HackerYou</p>
   </footer>
 </body>
 </html>
