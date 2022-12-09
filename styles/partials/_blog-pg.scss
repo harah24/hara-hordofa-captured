@@ -8,16 +8,119 @@
     height: 100vh;
 }
 
-.blog-nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px 30px 0 0;
-}
-
 .blog-title{
     display: flex;
     justify-content:center;
     flex-basis: 50%;
-    margin-top: 140px;
+    margin-top: 240px;
+}
+
+.main-flex{
+    display: flex;
+}
+
+.captured-posts{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.side-image{
+    max-width: 60%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    box-shadow: 41px 30px 0px -9px black;
+}
+
+.side-blog{
+    background-color: green;
+    max-width: 58%;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+.captured{
+    padding-left: 20px;
+    margin-bottom: 50px;
+    max-width: 90%;
+    span{
+        font-weight: bolder;
+    }
+}
+
+.posts{
+    max-width: 90%;
+    h4{
+        margin-left: 20px;
+    }
+    li{
+        margin-left: -18px;
+    }
+}
+
+.recent-posts li::before{
+    content: "•";
+    color: $quaternary;
+}
+
+.main-blog{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 250px;
+}
+
+.blog-post-img{
+    box-shadow: -30px 40px 0px 4px $quinary;
+}
+
+.great-locations{
+    margin: 28px 0 50px -22px;
+    padding-top: 20px;
+    box-shadow: -13px 14px 0px -1px $quinary;
+    padding-left: 50px;
+
+}
+
+.blog-date{
+    margin-top: -15px;
+}
+
+.comments{
+    margin-bottom: 50px;
+}
+
+.comment-1{
+    display: flex;
+    .jeremy{
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .jeremys-comment{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-date{
+        margin-bottom: -10px;
+    }
+}
+
+.comment-2{
+    display: flex;
+    margin-top: 20px;
+    .julia{
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    .julias-comment{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-date{
+        margin-bottom: -10px;
+    }
 }
 

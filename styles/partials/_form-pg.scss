@@ -1,0 +1,39 @@
+@use "variables" as*;
+
+// form
+
+.form-box {
+    display: flex;
+    margin-left: 150px;
+    margin-top: -150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.name {
+    margin-right: 20px;
+}
+
+.name,
+.email-address {
+    border: 0px solid $quaternary;
+    border-width: 1px;
+    background-color: $tertiary;
+}
+
+textarea {
+    border-color: $quaternary;
+    border-width: 1px;
+}
+
+.contact-btn {
+    display: flex;  
+}
