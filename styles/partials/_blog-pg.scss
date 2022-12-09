@@ -3,7 +3,7 @@
 
 .blog-header{
     background-image: url(../../captured-final-assets/blog-header.jpg);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -21,55 +21,3 @@
     margin-top: 140px;
 }
 
-.blog-post-image{
-    position: relative;
-    bottom: 350px;
-    margin-top: -60px;
-    margin-left: 470px;
-}
-
-.captured-posts{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.side-image{
-    max-width: 50%;
-    margin-bottom: 20px;
-}
-
-.captured{
-    max-width: 50%;
-}
-
-li::before {
-        content: "•";
-        color: $quaternary;
-    }
-
-.main-blog{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    padding-left: 150px;
-  
-}
-
-
-
-
-
-
-
-
-.comment-1,
-.comment-2{
-    display: flex;
-}
-
-.jeremy,
-.julia{
-    // align-self:flex-start;
-    margin-top: 33px;
-}
