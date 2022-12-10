@@ -1,0 +1,140 @@
+@use "variables" as *;
+
+.homepg-header{
+    background-image:url(../../captured-final-assets/header-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.homepg-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+    margin-left: 450px;
+    position:absolute;
+    z-index: 1;
+}
+
+.headerbox-img{
+    // display: flex;
+    position:relative;
+    max-width: 35%;
+    margin-left: 800px;
+    bottom: 350px;
+    box-shadow: -21px 2px 0px 20px $quinary;
+}
+
+.about-captured{
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -300px;
+    margin-bottom: 200px;
+    h2{
+       text-align: center;
+    }
+    button{
+        margin-right: 320px;
+        margin-left: 320px;
+        padding:10px 0;
+    }
+}
+
+.skills-gears{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+}
+
+.box-1{
+    max-width: 45%;
+    box-shadow: 35px 33px 0px -9px $quinary;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    // position: relative;
+}
+
+.box-2{
+    max-width: 35%;
+    margin-top: 100px;
+    button{
+        padding:10px 15px;
+    }
+}
+
+.box-3{
+    max-width: 35%;
+    margin-left:120px;
+    button{
+        padding: 10px 15px;
+    }
+}
+
+.box-4{
+    max-width: 45%;
+    margin-left: 165px;
+    box-shadow: -32px 35px 0px -9px $quinary;
+    // position: relative;
+}
+
+.container1{
+    display: flex;
+    max-width: 85%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .top-picks{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+.container2{
+    display: flex;
+    max-width: 85%;
+    margin-bottom: 100px;
+    .blog{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+.profile{
+    display: flex;
+    max-width: 80%;
+    margin-bottom: 100px;
+
+.small-img{
+    margin-top: 100px;
+    max-width: 40%;
+    box-shadow: 41px 41px 0px -9px $quinary;
+    }
+
+.profile-text{
+    max-width: 60%;
+    margin-top: 100px;
+    margin-left: 100px;
+    }
+}
+
+.home-gallery{
+    background-color:$tertiary;
+    display: flex;
+    width: 100%;
+    padding:100px;
+    margin: 0;
+}
+
+.home-gallery ul{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home-gallery li{
+    flex-basis: 20%;
+}
+
+.gallery-img2{
+    margin-left: 20px;
+    margin-right: 20px;
+}

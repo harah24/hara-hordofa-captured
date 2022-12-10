@@ -295,8 +295,6 @@ button {
   letter-spacing: 1px;
   background-color: #4CEEA7;
   border: none;
-  margin-top: 30px;
-  padding: 5px 225px;
 }
 
 nav {
@@ -316,13 +314,6 @@ p {
 
 li {
   list-style: none;
-}
-
-.header-img {
-  background-image: url(../../captured-final-assets/header-image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .blog-header {
@@ -498,7 +489,7 @@ li {
 
 .contact-title {
   text-align: center;
-  margin-left: 350px;
+  margin-left: 400px;
   margin-top: 150px;
 }
 
@@ -581,4 +572,212 @@ footer p {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px;
+  margin-top: -150px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.name {
+  margin-right: 20px;
+}
+
+.name,
+.email-address {
+  border: 0px solid #4CEEA7;
+  border-width: 1px;
+  background-color: #FAFAFA;
+}
+
+textarea {
+  border-color: #4CEEA7;
+  border-width: 2px;
+}
+
+.contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homepg-header {
+  background-image: url(../../captured-final-assets/header-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.homepg-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 500px;
+  margin-left: 450px;
+  position: absolute;
+  z-index: 1;
+}
+
+.headerbox-img {
+  position: relative;
+  max-width: 35%;
+  margin-left: 800px;
+  bottom: 350px;
+  -webkit-box-shadow: -21px 2px 0px 20px #FDFA69;
+          box-shadow: -21px 2px 0px 20px #FDFA69;
+}
+
+.about-captured {
+  max-width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -300px;
+  margin-bottom: 200px;
+}
+.about-captured h2 {
+  text-align: center;
+}
+.about-captured button {
+  margin-right: 320px;
+  margin-left: 320px;
+  padding: 10px 0;
+}
+
+.skills-gears {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: pink;
+}
+
+.box-1 {
+  max-width: 45%;
+  -webkit-box-shadow: 35px 33px 0px -9px #FDFA69;
+          box-shadow: 35px 33px 0px -9px #FDFA69;
+  margin-bottom: 100px;
+  margin-right: 20px;
+}
+
+.box-2 {
+  max-width: 35%;
+  margin-top: 100px;
+}
+.box-2 button {
+  padding: 10px 15px;
+}
+
+.box-3 {
+  max-width: 35%;
+  margin-left: 120px;
+}
+.box-3 button {
+  padding: 10px 15px;
+}
+
+.box-4 {
+  max-width: 45%;
+  margin-left: 165px;
+  -webkit-box-shadow: -32px 35px 0px -9px #FDFA69;
+          box-shadow: -32px 35px 0px -9px #FDFA69;
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.container1 .top-picks {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+  margin-bottom: 100px;
+}
+.container2 .blog {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+  margin-bottom: 100px;
+}
+.profile .small-img {
+  margin-top: 100px;
+  max-width: 40%;
+  -webkit-box-shadow: 41px 41px 0px -9px #FDFA69;
+          box-shadow: 41px 41px 0px -9px #FDFA69;
+}
+.profile .profile-text {
+  max-width: 60%;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.home-gallery {
+  background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 100px;
+  margin: 0;
+}
+
+.home-gallery ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.home-gallery li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.gallery-img2 {
+  margin-left: 20px;
+  margin-right: 20px;
 }
