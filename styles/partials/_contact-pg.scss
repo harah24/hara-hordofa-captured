@@ -1,25 +1,22 @@
 @use "variables" as *;
 
-// header 
-.contact-header {
-    background-image: url(.././../captured-final-assets/contact-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
+.contact-header {
+    background-image: url(../../captured-final-assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    max-width: 100%;
+}
 
 .contact-title{
-    text-align:center;
-    margin-left: 400px;
-    margin-top: 150px;
-
+    position: absolute;
+    right:250px;
+    transform: translateY(50px);
+    h1{
+        font-size: 4rem;
+    }
 }
-
-//
 
 .bottom-section {
     display: flex;
@@ -32,12 +29,12 @@
 .connect{
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 .socials li{
     display: flex;
     justify-content: space-between;
-   
 }
 
 ul i {
@@ -54,5 +51,7 @@ ul i {
     margin-left: 45px;
 }
 
-
+.contact-btn {
+    display: flex;  
+}
 
