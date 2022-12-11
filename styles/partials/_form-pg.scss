@@ -6,11 +6,16 @@
     display: flex;
     margin-left: 150px;
     margin-top: -150px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
 }
 
 form {
+    all: unset;
     display: flex;
     flex-direction: column;
+    padding: 50px;
 }
 
 .form-container {
@@ -25,15 +30,18 @@ form {
 .name,
 .email-address {
     border: 0px solid $quaternary;
-    border-width: 1px;
+    border-bottom: 2px solid $quaternary;
     background-color: $tertiary;
 }
 
 textarea {
-    border-color: $quaternary;
-    border-width: 2px;
+    border: none;
+    border: 2px solid $quaternary;
+    resize: none;
 }
 
 .contact-btn {
     display: flex;  
 }
+
+

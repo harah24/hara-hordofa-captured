@@ -236,6 +236,7 @@ html {
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1400px;
 }
 
 img {
@@ -320,7 +321,7 @@ li {
   background-image: url(../../captured-final-assets/blog-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh;
 }
 
 .blog-title {
@@ -570,7 +571,7 @@ footer {
 
 footer p {
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   text-align: center;
 }
 
@@ -580,9 +581,17 @@ footer p {
   display: flex;
   margin-left: 150px;
   margin-top: -150px;
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 form {
+  all: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +599,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 50px;
 }
 
 .form-container {
@@ -606,13 +616,14 @@ form {
 .name,
 .email-address {
   border: 0px solid #4CEEA7;
-  border-width: 1px;
+  border-bottom: 2px solid #4CEEA7;
   background-color: #FAFAFA;
 }
 
 textarea {
-  border-color: #4CEEA7;
-  border-width: 2px;
+  border: none;
+  border: 2px solid #4CEEA7;
+  resize: none;
 }
 
 .contact-btn {
@@ -626,28 +637,25 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
 }
 
 .homepg-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 500px;
-  margin-left: 450px;
   position: absolute;
+  top: 500px;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
   z-index: 1;
 }
 
 .headerbox-img {
-  position: relative;
-  max-width: 35%;
-  margin-left: 800px;
-  bottom: 350px;
-  -webkit-box-shadow: -21px 2px 0px 20px #FDFA69;
-          box-shadow: -21px 2px 0px 20px #FDFA69;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  -webkit-transform: translateY(-450px);
+          transform: translateY(-450px);
+  -webkit-box-shadow: -10px 2px 0px 25px #FDFA69;
+          box-shadow: -10px 2px 0px 25px #FDFA69;
 }
 
 .about-captured {
@@ -659,16 +667,19 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -300px;
-  margin-bottom: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 150px 0;
 }
 .about-captured h2 {
   text-align: center;
 }
 .about-captured button {
-  margin-right: 320px;
-  margin-left: 320px;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .skills-gears {
@@ -677,15 +688,17 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: pink;
+  background-color: #FAFAFA;
 }
 
 .box-1 {
   max-width: 45%;
-  -webkit-box-shadow: 35px 33px 0px -9px #FDFA69;
-          box-shadow: 35px 33px 0px -9px #FDFA69;
+  -webkit-box-shadow: 35px 31px 0px 1px #FDFA69;
+          box-shadow: 35px 31px 0px 1px #FDFA69;
   margin-bottom: 100px;
-  margin-right: 20px;
+  margin-right: 150px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .box-2 {
@@ -698,17 +711,23 @@ textarea {
 
 .box-3 {
   max-width: 35%;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 .box-3 button {
   padding: 10px 15px;
+  margin-left: 300px;
+}
+.box-3 h4 {
+  text-align: end;
 }
 
 .box-4 {
-  max-width: 45%;
+  max-width: 40%;
   margin-left: 165px;
-  -webkit-box-shadow: -32px 35px 0px -9px #FDFA69;
-          box-shadow: -32px 35px 0px -9px #FDFA69;
+  -webkit-box-shadow: -32px 35px 0px 1px #FDFA69;
+          box-shadow: -32px 35px 0px 1px #FDFA69;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 .container1 {
@@ -716,8 +735,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   max-width: 85%;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 50px;
+  margin-left: 50px;
 }
 .container1 .top-picks {
   margin-right: 100px;
@@ -730,10 +750,34 @@ textarea {
   display: flex;
   max-width: 85%;
   margin-bottom: 100px;
+  margin-left: 50px;
 }
 .container2 .blog {
   margin-right: 100px;
   margin-left: 100px;
+}
+
+.solid-cam,
+.solid-users,
+.solid-file,
+.solid-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.solid-cam h4,
+.solid-users h4,
+.solid-file h4,
+.solid-phone h4 {
+  margin-left: 10px;
+}
+.solid-cam i,
+.solid-users i,
+.solid-file i,
+.solid-phone i {
+  border-radius: 50%;
+  background-color: #4CEEA7;
+  padding: 8px;
 }
 
 .profile {
@@ -754,30 +798,24 @@ textarea {
   margin-top: 100px;
   margin-left: 100px;
 }
+.profile .profile-text button {
+  padding: 8px 10px;
+}
 
 .home-gallery {
   background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding: 100px;
   margin: 0;
 }
 
-.home-gallery ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
 .home-gallery li {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-}
-
-.gallery-img2 {
-  margin-left: 20px;
-  margin-right: 20px;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
 }
