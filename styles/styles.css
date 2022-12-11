@@ -271,22 +271,22 @@ nav,
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: clamp(1rem, 10vw, 5rem);
 }
 
 h2 {
-  font-size: 2rem;
   line-height: 92px;
+  font-size: clamp(1rem, 6vw, 2rem);
 }
 
 h3 {
-  font-size: 1.5rem;
   letter-spacing: 1px;
+  font-size: clamp(0.9rem, 6vw, 1.5rem);
 }
 
 h4 {
-  font-size: 1rem;
   letter-spacing: 1px;
+  font-size: clamp(0.9rem, 6vw, 1.5rem);
 }
 
 button {
@@ -845,4 +845,67 @@ textarea {
 .home-gallery li {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+@media (max-width: 500px) {
+  body p {
+    width: max(200px, 100%);
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
+  }
+  body button, body nav {
+    font-size: clamp(0.9rem, 1.25vw, 1rem);
+  }
+  .homepg-header {
+    background-size: cover;
+    height: 55vh;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 15px;
+  }
+  .headerbox-img {
+    display: none;
+  }
+  h1 {
+    -webkit-transform: translateX(-335px);
+            transform: translateX(-335px);
+    margin-top: -200px;
+    color: #2C2C2C;
+  }
+  .about-captured {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  .about-captured h2 {
+    margin-left: -20px;
+  }
+  .about-captured p {
+    margin-top: -10px;
+  }
+  .about-captured button {
+    padding: 5px;
+    margin-bottom: -200px;
+    margin-right: 20px;
+  }
+  .skills-gears .box-2 {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+  .skills-gears .box-3 {
+    max-width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+  .skills-gears .box-3 button {
+    margin-left: 5px;
+  }
+  .box-1, .box-4, .small-img, .home-gallery {
+    display: none;
+  }
 }
