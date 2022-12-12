@@ -1050,4 +1050,16 @@ textarea {
   .blog-form {
     display: none;
   }
+  .form-box {
+    display: none;
+  }
+  .homepg-title h1 {
+    font-size: 3rem;
+  }
+  .contact-title h1 {
+    font-size: 3rem;
+  }
+  .blog-title h1 {
+    font-size: 3rem;
+  }
 }
