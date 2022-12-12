@@ -884,7 +884,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: 155px;
+    margin-left: 330px;
     font-size: 1rem;
     max-width: -webkit-min-content;
     max-width: -moz-min-content;
@@ -1008,12 +1008,12 @@ textarea {
     display: none;
   }
   .contact-header {
-    height: 35vh;
+    height: 25vh;
   }
   .contact-title h1 {
     font-size: 2rem;
-    margin-right: -240px;
-    margin-top: 300px;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
   }
   .socials,
 .contact-info {
