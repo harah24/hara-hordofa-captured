@@ -1,11 +1,6 @@
 @use "variables" as *;
 
 
-@media (max-width:1000px){
-    .headerbox-img { display: none;}
-    .blog-post-img {display: none;}
-}
-    
 @media (max-width:500px){
 
     body{
@@ -27,18 +22,20 @@
         display: none;
         }
     .homepg-header{
-        height:40vh;
+        height:20vh;
         h1{
+        font-size: 2rem;
         transform: translateX(-350px);
-        margin-top: -280px;
+        margin-top: -50px;
          }
         .headerbox-img { display: none;}
     }
     nav{
         display: flex;
         flex-wrap:wrap;
-        margin-left: 220px;
+        margin-right: 155px;
         font-size: 1rem;
+        max-width:min-content;
     }
     .about-captured{
             transform: translateY(-60px);    
@@ -112,9 +109,77 @@
         }
     }
 
+    .blog-header{
+        height:30vh;
+        h1{
+            font-size: 2rem;
+        }
+    }
 
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .side-image{
+        margin-top:auto;
+        box-shadow: none;
+    }
+    .side-blog,
+    .captured,
+    .posts{
+       max-width: 100%;
+       margin-left: 0;
+       background-color:$secondary;
+    }
+    .captured{
+        max-width:max-content;
+    }
+    .posts{
+        margin-bottom: 150px;
+    }
+    .great-locations h2{
+        font-size: 1.25rem; 
+    }
+    .jeremy, 
+    .julia{
+        display: none;
+    }
+    .contact-header{
+        height: 35vh;
+    }
+    .contact-title h1{
+        font-size: 2rem;
+        margin-right: -240px;
+        margin-top: 300px;
+    }
+    .socials,
+    .contact-info{
+    transform: translateY(200px);
+    margin-left: -50px;
+    }
+    .form-box{
+        display: none;
+    }
+}
 
-    
+@media (max-width:1000px){
+    .headerbox-img { display: none;}
+    .blog-post-img {display: none;}
+    .homepg-header{
+        height:40vh;
+    }
+    .homepg-header nav {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .blog-post-img,
+    .great-locations{
+        box-shadow:none;
+    }
+    .blog-form{
+        display: none;
+    }
 
 }
 
